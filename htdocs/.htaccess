@@ -1,0 +1,5 @@
+DirectoryIndex login.php
+#force SSL on entire site
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://yanvendercs3750.great-site.net/$1 [R=301,L]
